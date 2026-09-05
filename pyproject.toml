@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "portrelay"
+version = "0.1.0"
+description = "Reenvio de puertos + tuneles SSH + panel web seguro (Windows/Linux/macOS, CLI)"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "gilmanpro" }]
+keywords = ["port-forward", "ssh-tunnel", "reverse-proxy", "web-panel"]
+classifiers = [
+  "Environment :: No Input/Output (Daemon)",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+]
+
+[project.scripts]
+portrelay = "portrelay.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["portrelay*"]
