@@ -4,9 +4,18 @@ Reenvío de puertos + túneles SSH remotos + **panel web seguro**.
 Un solo binario CLI, sin GUI, multiplataforma (**Windows / Linux / macOS**),
 solo con la librería estándar de Python.
 
-Extraído de lo mejor de [wsl-port](https://github.com/gilmanpro/wsl-port)
+Extraído de lo mejor de [wsl-port-unified](https://github.com/gilmanpro/wsl-port-unified)
 tras una auditoría de ciberseguridad: aquí todo lo que aprendimos de
 endurecimiento viene integrado por defecto.
+
+## La familia: ¿cuál usar?
+
+| Repo | Cuándo elegirla |
+|---|---|
+| **[portrelay](https://github.com/gilmanpro/portrelay)** (este) | Servidores/VPS/Linux/macOS: headless, cero dependencias, un solo `portrelay serve` |
+| **[portforward-tunnels](https://github.com/gilmanpro/portforward-tunnels)** | Windows con GUI de bandeja: netsh portproxy a WSL, API REST y MCP |
+| **[wsl-port-unified](https://github.com/gilmanpro/wsl-port-unified)** | Windows + WSL2: gestión de distros *y* publicación en Internet en 1 clic |
+| **[wsl-distro-manager](https://github.com/gilmanpro/wsl-distro-manager)** | Solo gestión de distros WSL (ciclo de vida, límites, métricas) |
 
 ## Instalar (un comando)
 
