@@ -4,6 +4,7 @@
 [![Python](https://img.shields.io/badge/Python-3.9%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![Plataforma](https://img.shields.io/badge/Plataforma-Windows%20%7C%20Linux%20%7C%20macOS-0078D6)](#instalar-un-comando)
 [![Dependencias](https://img.shields.io/badge/Dependencias-cero%20(stdlib)-2ea44f)](#seguridad-por-diseño)
+[![Tests](https://img.shields.io/badge/Tests-16%2F16%20passed-2ea44f)](#tests)
 
 Reenvío de puertos + túneles SSH remotos + **panel web seguro**.
 Un solo binario CLI, sin GUI, multiplataforma (**Windows / Linux / macOS**),
