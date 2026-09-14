@@ -23,20 +23,39 @@ endurecimiento viene integrado por defecto.
 | **[wsl-port-unified](https://github.com/gilmanpro/wsl-port-unified)** | Windows + WSL2: gestión de distros *y* publicación en Internet en 1 clic |
 | **[wsl-distro-manager](https://github.com/gilmanpro/wsl-distro-manager)** | Solo gestión de distros WSL (ciclo de vida, límites, métricas) |
 
-## Instalar (un comando)
+## Instalar
+
+Requiere Python ≥ 3.9. Sin dependencias externas.
+
+### Con el instalador (crea venv propio + comando en el PATH)
 
 ```bash
 # Linux / macOS
-curl -sL <repo>/install.sh | bash        # o: git clone && ./install.sh
+git clone https://github.com/gilmanpro/portrelay && cd portrelay
+./install.sh                              # instala en ~/.portrelay/venv y enlaza ~/.local/bin/portrelay
 
 # Windows (PowerShell)
-iwr <repo>/install.ps1 | iex             # o: .\install.ps1
-
-# o directamente con pip
-python3 -m pip install .
+git clone https://github.com/gilmanpro/portrelay; cd portrelay
+.\install.ps1                             # venv en ~/.portrelay/venv + ~/.portrelay/bin en el PATH
 ```
 
-Requiere Python ≥ 3.9. Sin dependencias externas.
+### Con pip (sin instalador)
+
+```bash
+# desde el repo clonado
+python3 -m pip install .
+
+# o directamente desde GitHub
+python3 -m pip install git+https://github.com/gilmanpro/portrelay.git
+```
+
+### Verificar
+
+```bash
+portrelay --version
+```
+
+> Si usaste `install.sh` y el comando no aparece: `export PATH="$HOME/.local/bin:$PATH"` (o reabre la terminal en Windows).
 
 ## Usar
 
